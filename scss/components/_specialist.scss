@@ -1,0 +1,88 @@
+.specialist {
+  &_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28rem;
+
+		@include tablet-small {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include mobile {
+			grid-template-columns: 1fr;
+		}
+
+    &_item {
+      max-width: 370rem;
+      padding: 44rem 38rem;
+      border-radius: 20rem;
+      background: var(--c--Terciary);
+
+      @include mobile{
+        margin-inline: auto;
+      }
+    }
+  }
+
+  .list_item {
+
+    &_link{
+      color: var(--c--Terciary);
+
+      @include tablet{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+
+    &_button {
+      margin-top: 40rem;
+      padding: 11rem 49rem;
+      font-size: 20rem;
+      font-weight: 600;
+      border-radius: 50rem;
+      color: var(--c--Terciary);
+      background: var(--c-primary);
+
+      @include tablet{
+        padding: 11rem 24rem;
+        font-size: 16rem;
+      }
+    }
+
+    &_text {
+      font-size: 16rem;
+      font-weight: 400;
+      margin-top: 20rem;
+      color: var(--c-Text);
+    }
+
+    &_desc {
+      display: flex;
+      align-items: center;
+      gap: 13rem;
+
+      @include tablet{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .item_btn_name {
+        margin: 0;
+        padding: 0;
+        font-size: 20rem;
+        font-weight: 600;
+        color: var(--c-Paragraph);
+        background: none;
+        text-align: left;
+
+        @include tablet{
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

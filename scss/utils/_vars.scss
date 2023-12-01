@@ -1,0 +1,47 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+  --html-fs: 1px;
+  --ff: "Work Sans", sans-serif;
+  --transition: 0.2s all ease-in-out;
+
+  --c-primary: #8842f0;
+  --c-text-white: #fff;
+  --c-border: #eee;
+  --c--Terciary: #F9F1FE;
+
+  --black: #000;
+
+  --c-Paragraph: #262626;
+  --c-Text: #575757;
+
+  --Heading-3: 700 36rem / normal var(--ff);
+  --Heading-4: 600 24rem / normal var(--ff);
+  --Link: 400 16rem / normal var(--ff);
+  --Paragraph: 400 16rem / normal var(--ff);
+
+  --Input: 400 14rem / normal var(--ff);
+  --Button: 600 20rem / normal var(--ff);
+}
+
+html._theme:root {
+  --c-primary: #59f042;
+}
+
+%effect-before {
+  content: "";
+  display: block;
+  width: 89rem;
+  height: 1rem;
+  border-radius: 50%;
+  bottom: 4rem;
+  position: absolute;
+  left: 46%;
+  transform: translateX(-50%);
+  transition: var(--transition);
+  background: var(--c-primary);
+}
